@@ -16,6 +16,7 @@ if (system.args.length === 1) {
 
 var vips = function (page) {
     page.evaluate(blockScript.blockExtraction);
+    page.render('baidu.png');
     phantom.exit();
 };
 
